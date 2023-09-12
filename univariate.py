@@ -11,6 +11,6 @@ class univariate():
             else:
                 print("quan")
                 quan.append(columnName)
-        return
+        return quan,qual
 
 
