@@ -37,6 +37,10 @@ class univariate():
             descriptive[colunmName]["Greater"]=descriptive[colunmName]["Q3:75%"]+descriptive[colunmName]["1.5rule"]
             descriptive[colunmName]["min"]=dataset[colunmName].min()
             descriptive[colunmName]["max"]=dataset[colunmName].max()
+            descriptive[colunmName]["kurtosis"]=dataset[colunmName].kurtosis()
+            descriptive[colunmName]["skew"]=dataset[colunmName].skew()
+            descriptive[colunmName]["variance"]=dataset[colunmName].var()
+            descriptive[colunmName]["standard_deviation"]=dataset[colunmName].std()
         return descriptive
     
     def outlier_colunmName():
